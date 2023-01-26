@@ -2,15 +2,22 @@ public class RecursivePractice {
 
     // Write your code below this point *^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^*^
 
-    public void countDown(int n) {
+    public static void countDown(int n) {
         // this method should recurisvely print into console a count down from n to 1
-
+        if(n>=1){
+            System.out.println("use a number higher than n");
+        }
+        countDown(int n-1);
     }
 
     public int sumOfNumbers(int n) {
         // this should recursively return the sum of n to 0, eg sumOfNumbers(4) = 10 =
         // 1+2+3+4
-        return 0;
+        if (n>=1){
+            return 0;
+        }
+        return n;
+        sumOfNumbers(n)
     }
 
     public boolean isAscending(int[] arr, int index) {
